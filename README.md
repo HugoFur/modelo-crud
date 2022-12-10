@@ -5,7 +5,7 @@
 <hr>
 
 ### Todo list de funções de controller
-- [x] Crie um novo Book: object.save()
+:heavy_check_mark: Crie um novo Book: object.save()
 - [ ] Encontre um Book por id: findById(id)
 - [ ] Recuperar todos os books: find()
 - [ ] Atualize um Book por id: findByIdAndUpdate(id, data)
