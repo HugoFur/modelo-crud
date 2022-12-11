@@ -30,9 +30,22 @@ exports.create = (req, res) => {
       });
   };
 
-exports.findAll = (req, res) => {
+  exports.findAll = (req, res) => {
+    // Recuperar objetos (com condição)
+    const title = req.query.title;
+    var condition = title ? { title: { $regex: new RegExp(title), $options: "i" } } : {};
   
-};
+    Book.find(condition)
+      .then(data => {
+        res.send(data);
+      })
+      .catch(err => {
+        res.status(500).send({
+          message:
+            err.message || "Ocorreu um erro ao recuperar os livros"
+        });
+      });
+  };
 
 exports.findOne = (req, res) => {
   
