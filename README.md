@@ -11,4 +11,5 @@
 :heavy_check_mark: Atualize um Book por id: findByIdAndUpdate(id, data)<br>
 :heavy_check_mark: Remover um Book: findByIdAndRemove(id)<br>
 :heavy_check_mark: Remover todos os books: deleteMany()<br>
-:heavy_check_mark: Encontre todos os books por título: find({ title: { $regex: new RegExp(title), $options: “i” } })<br><hr>
+:heavy_check_mark: Encontre todos os books por título: find({ title: { $regex: new RegExp(title), $options: “i” } })
+- [ ] Definir rotas<hr>
